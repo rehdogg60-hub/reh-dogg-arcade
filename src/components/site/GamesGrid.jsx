@@ -3,22 +3,17 @@ import games from "../../data/games";
 
 const GamesGrid = () => {
   return (
-    <section style={{ padding: "1rem" }}>
-      <h2>Games</h2>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1rem" }}>
+    <section className="site-content">
+      <h2 style={{ color: "var(--accent)", margin: "0 0 1rem 0" }}>Games</h2>
+      <div className="games-grid">
         {games.map((game) => (
-          <article key={game.id} style={{ border: "1px solid #e6e6e6", padding: "1rem", borderRadius: 6 }}>
-            <h3 style={{ margin: "0 0 .5rem 0" }}>{game.title}</h3>
-            {game.description && <p style={{ margin: "0 0 .5rem 0" }}>{game.description}</p>}
-            <p style={{ margin: "0 0 .5rem 0", fontSize: ".9rem", color: "#555" }}>
+          <article key={game.id} className="game-card">
+            <h3>{game.title}</h3>
+            {game.description && <p>{game.description}</p>}
+            <p>
               <strong>Genre:</strong> {game.genre} — <strong>Price:</strong> {game.price}
             </p>
-            <a
-              href={game.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ display: "inline-block", padding: ".5rem 1rem", background: "#007bff", color: "#fff", borderRadius: 4, textDecoration: "none" }}
-            >
+            <a className="arcade-button" href={game.url} target="_blank" rel="noopener noreferrer">
               Play
             </a>
           </article>
