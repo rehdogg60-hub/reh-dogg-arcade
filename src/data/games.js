@@ -35,7 +35,7 @@ const games = [
     genre: "Survival",
     price: "Free",
     url: "https://rehdogggamesplus.itch.io/bark-stars-reh-doggs-sudsy-squad",
-    thumbnail: "https://via.placeholder.com/640x360/0b0b0b/ccff00?text=Bark+Stars",
+    thumbnail: "https://img.itch.zone/aW1nLzI3MTE5ODE1LmpwZw==/original/3q8H2J.jpg",
   },
   {
     id: "neon-run",
@@ -44,7 +44,7 @@ const games = [
     genre: "Racing",
     price: "Free",
     url: "https://rehdogggamesplus.itch.io/reh-dogg-gp-neon-run",
-    thumbnail: "https://via.placeholder.com/640x360/0b0b0b/ccff00?text=Neon+Run",
+    thumbnail: "https://img.itch.zone/aW1nLzI3MTIwMDkxLmpwZw==/original/b0z267.jpg",
   },
   {
     id: "marcus",
@@ -53,7 +53,7 @@ const games = [
     genre: "Survival",
     price: "Free",
     url: "https://rehdogggamesplus.itch.io/marcus-santo-domingo-street-justice",
-    thumbnail: "https://via.placeholder.com/640x360/0b0b0b/ccff00?text=Marcus",
+    thumbnail: "https://img.itch.zone/aW1nLzI3MTE5NDc3LmpwZw==/original/sc1vvZ.jpg",
   },
   {
     id: "star-duel-3d",
@@ -61,8 +61,8 @@ const games = [
     description: "Dogfighting in neon space arenas.",
     genre: "Action",
     price: "Premium",
-    url: "#",
-    thumbnail: "https://via.placeholder.com/800x450/0b0b0b/ccff00?text=Star+Duel+3D",
+    url: "https://rehdogggamesplus.itch.io/reh-dogg-star-duel-3d",
+    thumbnail: "https://img.itch.zone/aW1nLzI3MTE5ODg0LmpwZw==/original/OUEi9R.jpg",
   },
 ];
 
