@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import games from "../../data/games";
 
-const CATEGORIES = ["All", "Platformer", "Puzzle", "Strategy", "Action", "Racing", "Survival"];
+const CATEGORIES = ["All", "Action", "Racing", "Survival", "Strategy", "Puzzle", "Platformer"];
 
 const Badge = ({ children, style }) => (
   <span style={{ display: "inline-block", padding: "2px 8px", borderRadius: 999, fontSize: ".8rem", ...style }}>{children}</span>
