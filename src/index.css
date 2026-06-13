@@ -30,6 +30,27 @@ code{font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monos
 .site-hero h1{font-size:2.1rem;margin:0 0 .5rem;color:var(--accent);text-shadow:0 0 8px rgba(204,255,0,0.12)}
 .site-hero p{margin:0;color:var(--muted)}
 
+/* Hero polished layout */
+.hero-inner{display:flex;gap:1.5rem;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;width:100%;padding:0 1rem}
+.hero-left{flex:1;min-width:0}
+.hero-right{width:260px}
+.hero-headline{font-size:2.6rem;line-height:1.02;margin:0;color:var(--text);letter-spacing:1px}
+.hero-headline .neon{color:var(--accent);text-shadow:0 0 18px rgba(204,255,0,0.18);font-weight:900}
+.hero-sub{margin-top:.6rem;color:var(--muted);font-size:1rem}
+
+.stats-card{background:linear-gradient(180deg, rgba(11,11,11,0.9), rgba(6,6,6,0.95));border:1px solid rgba(204,255,0,0.06);padding:1rem;border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.stat{display:flex;flex-direction:column;align-items:center}
+.stat-number{font-size:1.75rem;color:var(--accent);font-weight:800}
+.stat-label{font-size:.85rem;color:var(--muted)}
+.divider{width:1px;height:48px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))}
+
+.arcade-button.outline{background:transparent;color:var(--accent);border:2px solid rgba(204,255,0,0.12)}
+.arcade-button{display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:800;color:var(--bg);background:var(--accent);box-shadow:0 6px 26px rgba(204,255,0,0.16);border:2px solid rgba(255,255,255,0.02)}
+
+/* background grid/glow */
+.site-hero:before{content:"";position:absolute;left:0;right:0;top:64px;bottom:0;pointer-events:none;background-image:radial-gradient(rgba(204,255,0,0.02) 1px, transparent 1px);background-size:60px 60px;opacity:.4;mix-blend-mode:screen}
+.site-hero{position:relative}
+
 .site-content{max-width:1100px;margin:0 auto;padding:1rem}
 
 .games-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
@@ -45,7 +66,10 @@ code{font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monos
 
 @media (max-width:520px){
   .site-hero{padding:2rem 1rem}
-  .site-hero h1{font-size:1.6rem}
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .hero-right{width:100%;order:3}
+  .hero-headline{font-size:1.6rem}
+  .stats-card{width:100%;justify-content:space-around}
 }
 
 /* Fullscreen hint */

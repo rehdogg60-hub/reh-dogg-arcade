@@ -16,7 +16,7 @@ const Featured = () => {
   }, [category]);
 
   return (
-    <section className="site-content" style={{ paddingTop: 12 }}>
+    <section id="games" className="site-content" style={{ paddingTop: 12 }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem", marginBottom: "1rem" }}>
         <h2 style={{ margin: 0, color: "var(--accent)" }}>Featured Games</h2>
         <div style={{ display: "flex", gap: ".5rem", flexWrap: "wrap" }}>
