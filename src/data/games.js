@@ -6,6 +6,7 @@ const games = [
     genre: "Survival",
     price: "Free",
     url: "https://rehdogggamesplus.itch.io/bark-stars-reh-doggs-sudsy-squad",
+    thumbnail: "https://via.placeholder.com/640x360/0b0b0b/ccff00?text=Bark+Stars",
   },
   {
     id: "neon-run",
@@ -14,6 +15,7 @@ const games = [
     genre: "Racing",
     price: "Free",
     url: "https://rehdogggamesplus.itch.io/reh-dogg-gp-neon-run",
+    thumbnail: "https://via.placeholder.com/640x360/0b0b0b/ccff00?text=Neon+Run",
   },
   {
     id: "marcus",
@@ -22,6 +24,34 @@ const games = [
     genre: "Survival",
     price: "Free",
     url: "https://rehdogggamesplus.itch.io/marcus-santo-domingo-street-justice",
+    thumbnail: "https://via.placeholder.com/640x360/0b0b0b/ccff00?text=Marcus",
+  },
+  {
+    id: "terra-snout-deep-dig-demo",
+    title: "Terra Snout: Deep Dig",
+    description: "Dig through strange underground worlds.",
+    genre: "Platformer",
+    price: "Free",
+    url: "#",
+    thumbnail: "https://via.placeholder.com/800x450/0b0b0b/ccff00?text=Terra+Snout",
+  },
+  {
+    id: "star-duel-3d",
+    title: "Star Duel 3D",
+    description: "Dogfighting in neon space arenas.",
+    genre: "Action",
+    price: "Premium",
+    url: "#",
+    thumbnail: "https://via.placeholder.com/800x450/0b0b0b/ccff00?text=Star+Duel+3D",
+  },
+  {
+    id: "booking-empire",
+    title: "Booking Empire",
+    description: "Build your travel booking empire.",
+    genre: "Strategy",
+    price: "Premium",
+    url: "#",
+    thumbnail: "https://via.placeholder.com/800x450/0b0b0b/ccff00?text=Booking+Empire",
   },
 ];
 
