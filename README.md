@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Reh Dogg Games Plus Arcade — Local Development
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the Reh Dogg Games Plus Arcade web app. To run locally:
+
+- Install dependencies: `npm install`
+- Start development server: `npm start`
+- Create a production build: `npm run build`
 
 ## Available Scripts
 
@@ -41,7 +45,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more about building and deploying the app in the project documentation.
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
