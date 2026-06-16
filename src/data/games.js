@@ -27,6 +27,16 @@ const games = [
     thumbnail: "https://img.itch.zone/aW1nLzI3ODM3NTcyLmpwZw==/original/CNoVfA.jpg",
   },
 
+  {
+    id: "chip-cha-iro",
+    title: "Chip Cha Iro: Forest Treat Adventure",
+    description: "Explore forest stages, overcome obstacles, and collect treats in this platformer adventure.",
+    genre: "Platformer",
+    price: "Premium",
+    url: "https://rehdogggamesplus.itch.io/chip-cha-iro-forest-treat-adventure",
+    thumbnail: "https://img.itch.zone/aW1nLzI3ODcyOTY0LmpwZw==/original/pTmgZg.jpg",
+  },
+
   // existing catalog (kept below featured)
   {
     id: "bark-stars",
