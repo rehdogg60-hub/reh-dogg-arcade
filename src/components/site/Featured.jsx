@@ -1,14 +1,17 @@
 import React, { useMemo, useState } from "react";
 import games from "../../data/games";
 
-const CATEGORIES = ["All", "Action", "Racing", "Survival", "Strategy", "Puzzle", "Platformer", "Horror", "Adventure"];
-
 const Badge = ({ children, style }) => (
   <span style={{ display: "inline-block", padding: "2px 8px", borderRadius: 999, fontSize: ".8rem", ...style }}>{children}</span>
 );
 
 const Featured = () => {
   const [category, setCategory] = useState("All");
+
+  const categories = useMemo(() => {
+    const genres = games.map((g) => g.genre).filter(Boolean);
+    return ["All", ...Array.from(new Set(genres))];
+  }, []);
 
   const filtered = useMemo(() => {
     // Exclude games explicitly marked as not featured
@@ -22,7 +25,7 @@ const Featured = () => {
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem", marginBottom: "1rem" }}>
         <h2 style={{ margin: 0, color: "var(--accent)" }}>Featured Games</h2>
         <div style={{ display: "flex", gap: ".5rem", flexWrap: "wrap" }}>
-          {CATEGORIES.map((cat) => (
+          {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setCategory(cat)}
