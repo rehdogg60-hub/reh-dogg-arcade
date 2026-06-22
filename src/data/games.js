@@ -27,6 +27,18 @@ const games = [
     thumbnail: "https://img.itch.zone/aW1nLzI3ODM3NTcyLmpwZw==/original/CNoVfA.jpg",
   },
 
+  
+
+  {
+    id: "reh-dogg-forest-of-the-forgotten",
+    title: "Reh Dogg: Forest of the Forgotten",
+    description: "A first-person psychological horror adventure — explore a haunted forest, collect clues, and uncover the truth.",
+    genre: "Horror",
+    price: "Premium",
+    url: "https://rehdogggamesplus.itch.io/reh-dogg-forest-of-the-forgotten",
+    thumbnail: "https://img.itch.zone/aW1nLzI4MDEzMDk5LmpwZw==/original/SiNjej.jpg",
+  },
+
   {
     id: "chip-cha-iro",
     title: "Chip Cha Iro: Forest Treat Adventure",

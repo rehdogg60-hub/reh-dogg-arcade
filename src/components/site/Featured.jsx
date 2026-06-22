@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import games from "../../data/games";
 
-const CATEGORIES = ["All", "Action", "Racing", "Survival", "Strategy", "Puzzle", "Platformer"];
+const CATEGORIES = ["All", "Action", "Racing", "Survival", "Strategy", "Puzzle", "Platformer", "Horror", "Adventure"];
 
 const Badge = ({ children, style }) => (
   <span style={{ display: "inline-block", padding: "2px 8px", borderRadius: 999, fontSize: ".8rem", ...style }}>{children}</span>
@@ -11,8 +11,10 @@ const Featured = () => {
   const [category, setCategory] = useState("All");
 
   const filtered = useMemo(() => {
-    if (category === "All") return games;
-    return games.filter((g) => g.genre && g.genre.toLowerCase() === category.toLowerCase());
+    // Exclude games explicitly marked as not featured
+    const candidate = games.filter((g) => g.featured !== false);
+    if (category === "All") return candidate;
+    return candidate.filter((g) => g.genre && g.genre.toLowerCase() === category.toLowerCase());
   }, [category]);
 
   return (
