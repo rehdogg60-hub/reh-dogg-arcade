@@ -1,4 +1,5 @@
 import React from "react";
+import games from "../../data/games";
 
 const Hero = () => {
   return (
@@ -23,12 +24,12 @@ const Hero = () => {
         <aside className="hero-right">
           <div className="stats-card">
             <div className="stat">
-              <div className="stat-number">18</div>
+              <div className="stat-number">{games.length}</div>
               <div className="stat-label">Titles</div>
             </div>
             <div className="divider" />
             <div className="stat">
-              <div className="stat-number">7</div>
+              <div className="stat-number">{Array.from(new Set(games.map(g => g.genre).filter(Boolean))).length}</div>
               <div className="stat-label">Genres</div>
             </div>
           </div>
