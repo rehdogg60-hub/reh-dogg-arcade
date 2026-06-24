@@ -16,9 +16,9 @@ const Landing = () => {
       <Navbar />
       <Hero />
       <Marquee />
-      <Products />
       <Featured />
       <GamesGrid />
+      <Products />
       <About />
       <Contact />
       <Footer />
