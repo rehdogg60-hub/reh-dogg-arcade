@@ -3,6 +3,7 @@ import Navbar from "../components/site/Navbar";
 import Hero from "../components/site/Hero";
 import Featured from "../components/site/Featured";
 import Marquee from "../components/site/Marquee";
+import Products from "../components/site/Products";
 import GamesGrid from "../components/site/GamesGrid";
 import About from "../components/site/About";
 import Contact from "../components/site/Contact";
@@ -15,6 +16,7 @@ const Landing = () => {
       <Navbar />
       <Hero />
       <Marquee />
+      <Products />
       <Featured />
       <GamesGrid />
       <About />
