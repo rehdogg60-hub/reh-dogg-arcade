@@ -20,22 +20,34 @@ const Products = () => {
       </div>
 
       <div className="product-grid">
-        {products.map((product) => (
-          <article className="product-card" key={product.id}>
-            <a href={product.url} target="_blank" rel="noopener noreferrer" className="product-image-link">
-              <img src={product.image} alt={product.title} loading="lazy" />
-            </a>
-            <div className="product-card-body">
-              <h3>{product.title}</h3>
-              <div className="product-card-footer">
-                <span>{product.price}</span>
-                <a className="arcade-button" href={product.url} target="_blank" rel="noopener noreferrer">
-                  Shop
+        {products.map((product) => {
+          const image = <img src={product.image} alt={product.title} loading="lazy" />;
+
+          return (
+            <article className="product-card" key={product.id}>
+              {product.url ? (
+                <a href={product.url} target="_blank" rel="noopener noreferrer" className="product-image-link">
+                  {image}
                 </a>
+              ) : (
+                <div className="product-image-link product-image-static">{image}</div>
+              )}
+              <div className="product-card-body">
+                <h3>{product.title}</h3>
+                <div className="product-card-footer">
+                  <span>{product.price}</span>
+                  {product.url ? (
+                    <a className="arcade-button" href={product.url} target="_blank" rel="noopener noreferrer">
+                      Shop
+                    </a>
+                  ) : (
+                    <span className="coming-soon-button">Soon</span>
+                  )}
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
+            </article>
+          );
+        })}
       </div>
     </section>
   );
