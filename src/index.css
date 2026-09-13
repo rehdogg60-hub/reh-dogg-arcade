@@ -20,8 +20,14 @@ body{
 
 code{font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace}
 
-.site-navbar{display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem;border-bottom:1px solid rgba(204,255,0,0.08);height:64px}
-.site-navbar h2{margin:0;color:var(--accent);letter-spacing:1px;font-size:1.05rem}
+.site-navbar{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center;justify-content:space-between;padding:.75rem 1.25rem;border-bottom:1px solid rgba(204,255,0,0.08);min-height:64px}
+.site-navbar h2{flex-shrink:0;max-width:100%;margin:0;color:var(--accent);letter-spacing:1px;font-size:1.05rem;line-height:1.4}
+.site-navbar-controls{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;min-width:0}
+.site-navbar-links,.site-navbar-actions{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+@media (max-width:800px){
+  .site-navbar h2{flex-basis:100%}
+  .site-navbar-controls{width:100%}
+}
 
 .kofi-button{background:transparent;color:var(--accent);border:2px solid var(--accent);padding:.4rem .8rem;border-radius:6px;text-decoration:none;font-weight:600;box-shadow:0 0 12px rgba(204,255,0,0.08);}
 .kofi-button:hover{background:rgba(204,255,0,0.06)}
