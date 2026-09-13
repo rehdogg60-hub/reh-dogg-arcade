@@ -1,5 +1,32 @@
 const games = [
   {
+    id: "reh-dogg-arcade-mayhem",
+    title: "Reh Dogg Arcade: Mayhem",
+    description: "Survive enemy waves, evolve your weapons, and conquer a five-stage 3D journey.",
+    genre: "Survival",
+    price: "Free",
+    url: "https://rehdogggamesplus.itch.io/reh-dogg-arcade-mayhem",
+    thumbnail: "https://img.itch.zone/aW1nLzI5OTQ1MTMzLnBuZw==/original/e4Ag34.png",
+  },
+  {
+    id: "reh-dogg-arcade-agent-8-ball",
+    title: "Reh Dogg Arcade: Agent 8-Ball",
+    description: "Sink shots, beat the clock, and defuse the danger in an arcade pool challenge.",
+    genre: "Sports",
+    price: "Free",
+    url: "https://rehdogggamesplus.itch.io/reh-dogg-arcade-agent-8-ball",
+    thumbnail: "https://img.itch.zone/aW1nLzI5NDU5NTMyLnBuZw==/original/RTrgE7.png",
+  },
+  {
+    id: "reh-dogg-arcade-hyperdrive",
+    title: "Reh Dogg Arcade: Hyperdrive",
+    description: "Boost through neon city tracks and dodge barriers in a futuristic hovercraft racer.",
+    genre: "Racing",
+    price: "Free",
+    url: "https://rehdogggamesplus.itch.io/reh-dogg-arcade-hyperdrive",
+    thumbnail: "https://img.itch.zone/aW1nLzI5NDUwOTk4LnBuZw==/original/5ag74l.png",
+  },
+  {
     id: "reh-dogg-forest-of-the-forgotten",
     title: "Reh Dogg: Forest of the Forgotten",
     description: "A first-person psychological horror adventure where you uncover the truth.",
