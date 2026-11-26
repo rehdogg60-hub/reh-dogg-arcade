@@ -1,0 +1,68 @@
+.playground-games {
+  max-width: 76rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  scroll-margin-top: 6rem;
+}
+
+.playground-games__banner {
+  padding: clamp(1.25rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  border: 1px solid #6c48a8;
+  border-radius: 1rem;
+  background: linear-gradient(115deg, #251444, #101f3a);
+  color: #fff;
+}
+
+.playground-games__banner h2 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.playground-games__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.playground-games__grid a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #63478a;
+  border-radius: 0.75rem;
+  background: #171426;
+  color: #fff;
+  text-decoration: none;
+}
+
+.playground-games__grid a:hover,
+.playground-games__grid a:focus-visible {
+  outline: 2px solid #a6f5ff;
+  outline-offset: 3px;
+}
+
+.playground-games__grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #2d2146;
+}
+
+.playground-games__title {
+  flex: 1;
+  padding: 0.75rem 0.875rem 0.25rem;
+  font-weight: 700;
+}
+
+.playground-games__play {
+  padding: 0 0.875rem 0.875rem;
+  color: #a6f5ff;
+  font-weight: 700;
+}
