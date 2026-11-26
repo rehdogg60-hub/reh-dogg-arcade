@@ -5,6 +5,7 @@ import Featured from "../components/site/Featured";
 import Marquee from "../components/site/Marquee";
 import Products from "../components/site/Products";
 import GamesGrid from "../components/site/GamesGrid";
+import PlaygroundGames from "../components/site/PlaygroundGames";
 import About from "../components/site/About";
 import Contact from "../components/site/Contact";
 import Footer from "../components/site/Footer";
@@ -18,6 +19,7 @@ const Landing = () => {
       <Marquee />
       <Featured />
       <GamesGrid />
+      <PlaygroundGames />
       <Products />
       <About />
       <Contact />
